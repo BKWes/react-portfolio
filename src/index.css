@@ -47,3 +47,17 @@ header {
   justify-content: center;
   text-align: center;
 }
+
+.footer {
+  color: var(--grey);
+  display: flex;
+  justify-content: center;
+}
+
+.footerLink {
+  color: var(--tan);
+}
+
+a {
+  text-decoration: none;
+}
