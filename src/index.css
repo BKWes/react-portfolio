@@ -33,3 +33,10 @@ header {
   text-align: center;
   align-items: center;
 }
+
+.navList {
+  text-decoration: none;
+  color: var(--grey);
+  display: flex;
+  justify-content: space-evenly;
+}
