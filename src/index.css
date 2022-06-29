@@ -40,3 +40,10 @@ header {
   display: flex;
   justify-content: space-evenly;
 }
+
+.about {
+  color: var(--pink);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
