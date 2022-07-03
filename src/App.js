@@ -5,7 +5,7 @@ import './App.css';
 import About from './components/About';
 import Footer from './components/Footer';
 import Nav from './components/Navigation';
-
+import Projects from './components/Projects'
 
 function App() {
   const [categories] = useState([
