@@ -2,15 +2,22 @@ import React from "react";
 
 function Nav() {
     return (
-        <section className="nav">
-            <div>
-                <span className="navList">
-                    <p>About me</p>
-                    <p>Portfolio</p>
-                    <p>Contact</p>
-                </span>
-            </div>
-        </section>
+        <header>
+          <h2 className="m-3 p-3">WB</h2>
+          <nav className="m-3">
+            <ul>
+                {categories.map((category, id) => (
+                    <li
+                        key={id}
+                        onClick={() => {
+                            setCurrentCategory(category.name);
+                        }}
+                    >{category.name}
+                    </li>
+                ))}
+            </ul>
+          </nav>
+        </header>
     )
 }
 
