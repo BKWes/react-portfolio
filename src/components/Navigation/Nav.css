@@ -1,5 +1,5 @@
 header {
-    background-color: grey;
+    background-color: #30343f;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -7,9 +7,10 @@ header {
 }
 
 header h2 {
-    padding: 10px;
-    background-color: black;
-    color: lime;
+    background-color: #273469;
+    color: #e4d9ff;
+    align-items: center;
+    border-radius: 40%;
 }
 
 header nav {
@@ -27,6 +28,7 @@ header nav ul {
 header nav ul li {
     padding: 20px;
     font-size: 35px;
+    color:#e4d9ff;
 }
 
 /* add hover style */

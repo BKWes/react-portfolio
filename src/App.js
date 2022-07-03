@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import About from './components/About';
 import Footer from './components/Footer';
 import Nav from './components/Navigation';
-import Projects from './components/Projects'
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   const [categories] = useState([
@@ -24,7 +25,7 @@ function App() {
           />
         {currentCategory === 'About' && <About />}
         {currentCategory === 'Projects' && <Projects />}
-        {/* {currentCategory === 'Contact' && <Contact />} */}
+        {currentCategory === 'Contact' && <Contact />}
         <Footer />
     </div>
   );

@@ -4,7 +4,7 @@ import './Nav.css';
 function Nav({ categories, setCurrentCategory, currentCategory }) {
     return (
         <header>
-          <h2 className="m-3 p-3">WB</h2>
+          <h2 className="m-3 p-3 mt-6">WB</h2>
           <nav className="m-3">
             <ul>
                 {categories.map((category, id) => (

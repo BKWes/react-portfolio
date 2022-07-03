@@ -18,7 +18,7 @@ function Projects() {
             <ul className="projectListItem">
                 {repos.map((repo, id) => (
                     <a href={repo.html_url}>
-                        <div className="m-3 border border-dark" key={id}>
+                        <div className="m-3 border-bottom border-dark" key={id}>
                             <div className="project">
                                 <img src={`https://raw.githubusercontent.com/BKWes/${repo.name}/main/preview/screenshot.jpg`} alt={`${repo.name} preview`} />
                                 <div className="project-title">
