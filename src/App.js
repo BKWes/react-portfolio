@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './index.css';
 import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header'
@@ -7,7 +7,7 @@ import Header from './components/Header'
 function App() {
   return (
     <div>
-      <main>
+      <main className='pageContainer'>
         <Header></Header>
         <About></About>
         <Footer></Footer>

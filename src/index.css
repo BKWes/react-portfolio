@@ -22,6 +22,11 @@ code {
     monospace;
 }
 
+main {
+  display: relative;
+  min-height: 100vh;
+}
+
 header {
   color: var(--tan);
   padding-top: 0;
@@ -52,6 +57,9 @@ header {
   color: var(--grey);
   display: flex;
   justify-content: center;
+  margin-bottom: auto;
+  margin-top: auto;
+  flex: 1;
 }
 
 .footerLink {
