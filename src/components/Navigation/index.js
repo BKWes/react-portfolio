@@ -1,6 +1,6 @@
 import React from "react";
 
-function Nav() {
+function Nav({ categories, setCurrentCategory, currentCategory }) {
     return (
         <header>
           <h2 className="m-3 p-3">WB</h2>
