@@ -1,0 +1,38 @@
+header {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+header h2 {
+    padding: 10px 30px;
+    border-radius: 0 20px 20px 0;
+    background-color: black;
+    color: lime;
+}
+
+header nav {
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    padding: 20px;
+    font-size: 35px;
+}
+
+/* add hover style */
+header nav ul li:hover {
+    border-radius: 15px;
+    text-shadow: none;
+    color: rgba(0, 255, 0, 0.5);
+}
