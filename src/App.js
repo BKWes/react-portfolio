@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import About from './components/About';
 import Footer from './components/Footer';
@@ -23,8 +23,8 @@ function App() {
           currentCategory={currentCategory}
           />
         {currentCategory === 'About' && <About />}
-        {currentCategory === 'Projects' && <Project />}
-        {currentCategory === 'Contact' && <Contact />}
+        {currentCategory === 'Projects' && <Projects />}
+        {/* {currentCategory === 'Contact' && <Contact />} */}
         <Footer />
     </div>
   );

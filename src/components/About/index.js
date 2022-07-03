@@ -6,10 +6,10 @@ function About() {
         <section className="about m-2">
           <div className="intro p-2">
             <h3>
-                I'm Weston, and I am currently enrolled in the Michigan State University full-stack coding bootcamp. 
+                I'm Weston, a software developer. 
             </h3>
             <span>
-                I have had an interest in technology and web applications for a good part of my personal life. I have spent the past year studying software and computer development along with schooling to transition my professional life towards this field.
+            I am currently enrolled in the Michigan State University full-stack coding bootcamp and I have had an interest in technology and web applications for a good part of my personal life. I have spent the past year studying software and computer development along with schooling to transition my professional life towards this field.
             </span>
           </div>
           <div className="skills pt-3">
