@@ -1,17 +1,31 @@
-import React from 'react';
-import './index.css';
+import React, { useEffect, useState } from 'react';
+import './App.css';
+
+
 import About from './components/About';
 import Footer from './components/Footer';
-import Header from './components/Header'
+import Nav from './components/Navigation';
+
 
 function App() {
+  const [categories] = useState([
+    { name: "About", description: "Introduction" },
+    { name: "Projects", description: "My top apps from Github" },
+    { name: "Contact", description: "Different methods of communicating with me" }
+  ])
+  const [currentCategory, setCurrentCategory] = useState("About");
+
   return (
-    <div>
-      <main className='pageContainer'>
-        <Header></Header>
-        <About></About>
-        <Footer></Footer>
-      </main>
+    <div className='App'>
+        <Nav
+          categories={categories}
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}
+          />
+        {currentCategory === 'About' && <About />}
+        {currentCategory === 'Projects' && <Project />}
+        {currentCategory === 'Contact' && <Contact />}
+        <Footer />
     </div>
   );
 }
