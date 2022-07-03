@@ -21,7 +21,7 @@ function Projects() {
                             <div className="project">
                                 <img src={`https://raw.githubusercontent.com/BKWes/${repo.name}/main/preview/screenshot.jpg`} alt={`${repo.name} preview`} />
                                 <div className="project-title">
-                                    <h4>{repo.name}</h4>
+                                    <h3>{repo.name}</h3>
                                     <p>{repo.description}</p>
                                 </div>
                             </div>

@@ -1,0 +1,27 @@
+.section-title {
+    margin: 5vh;
+}
+
+.projectListItem {
+    width: 100%
+}
+
+.project-title {
+    padding: 5px;
+}
+
+.project-title h3 {
+    margin: 10px;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.project-title p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.project img {
+    width: 40vh;
+    height: 40vh;
+}
