@@ -7,12 +7,14 @@ import Footer from './components/Footer';
 import Nav from './components/Navigation';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
   const [categories] = useState([
     { name: "About", description: "Introduction" },
     { name: "Projects", description: "My top apps from Github" },
-    { name: "Contact", description: "Different methods of communicating with me" }
+    { name: "Contact", description: "Different methods of communicating with me" },
+    { name: "Resume", description: "a downloadable pdf of my Resume" },
   ])
   const [currentCategory, setCurrentCategory] = useState("About");
 
@@ -26,6 +28,7 @@ function App() {
         {currentCategory === 'About' && <About />}
         {currentCategory === 'Projects' && <Projects />}
         {currentCategory === 'Contact' && <Contact />}
+        {currentCategory === 'Resume' && <Resume />}
         <Footer />
     </div>
   );
