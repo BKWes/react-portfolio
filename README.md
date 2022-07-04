@@ -34,7 +34,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 [Github Pages](https://bkwes.github.io/react-portfolio/)
 
 ### Screenshot
-
+![Screenshot of Site](./assets/portfolio-ss.png)
 
 ### Created By
 [Weston Barnes](https://www.github.com/bkwes)
