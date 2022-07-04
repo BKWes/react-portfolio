@@ -1,0 +1,18 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.intro {
+    width: 80%;
+}
+
+.skills {
+    text-decoration: underline;
+}
+
+.skillSection {
+    width: 25%;
+    float: left;
+}
