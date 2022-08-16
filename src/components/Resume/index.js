@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-// import resume from assets
+import resume from './assets/resume.pdf';
 import './Resume.css';
-// import { Document, Page } from "react-pdf";
-// import { pdfjs } from 'react-pdf';
+import { Document, Page, pdfjs } from "react-pdf";
 
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function Resume() {
     const [numPages, setNumPages] = useState(null);
@@ -15,23 +14,20 @@ function Resume() {
     }
 
     return(
-        <div className="mt-3 p-3">
-            <p>Resume coming soon...</p>    
-        </div>
-        // <div>
-        //     <a href={resume} download>
-        //         <button target="_blank" className="m-2">Download Resume</button>
-        //     </a>
-        // <Document
-        //     file={resume}
-        //     onLoadSuccess={onDocumentLoadSuccess}
-        //     onLoadError={console.error}
-        //   >
-        //     <Page pageNumber={1} />
-        // add more pages if needed
-        // </Document>
+        
+        <div>
+            <a href={resume} download>
+                <button target="_blank" className="m-2">Download Resume</button>
+            </a>
+        <Document
+            file={resume}
+            onLoadSuccess={onDocumentLoadSuccess}
+            onLoadError={console.error}
+          >
+            <Page pageNumber={1} />
+        </Document>
 
-        // </div>
+        </div>
     );
 }
 
